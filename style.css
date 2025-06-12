@@ -9,7 +9,7 @@ h1 {
 }
 
 #map {
-  height: 600px; /* VERY IMPORTANT: gives the map visible height */
+  height: 600px;
   width: 100%;
 }
 
