@@ -25,7 +25,7 @@ const locations = [
   }
 ];
 
-// Initialize the map
+// Initialize map centered on Gwangalli Beach
 const map = L.map('map').setView([35.1533, 129.1189], 13);
 
 // Add OpenStreetMap tiles
@@ -34,13 +34,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Add markers and popups with images and descriptions
-locations.forEach(location => {
-  const marker = L.marker(location.coords).addTo(map);
+// Add markers with popups for each location
+locations.forEach(({name, coords, img, desc}) => {
+  const marker = L.marker(coords).addTo(map);
   const popupContent = `
-    <h3>${location.name}</h3>
-    <img src="${location.img}" alt="${location.name}" />
-    <p>${location.desc}</p>
+    <h3>${name}</h3>
+    <img src="${img}" alt="${name}">
+    <p>${desc}</p>
   `;
   marker.bindPopup(popupContent);
 });
