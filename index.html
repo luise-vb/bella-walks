@@ -2,42 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BellaWalks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bella Walks Map</title>
 
   <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
-    href="https://unpkg.com/leaflet/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-o8cyLhLF4nYmbjD4LCS0CrSqVbN6qhBMYttY7jZ6L8Q="
     crossorigin=""
   />
 
-  <!-- Your CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Basic page and map styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+    /* Popup image styling */
+    .leaflet-popup-content img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .leaflet-popup-content h3 {
+      margin: 0 0 5px 0;
+      text-align: center;
+    }
+    .leaflet-popup-content p {
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>BellaWalks</h1>
-  </header>
 
-  <main>
-    <!-- Map container -->
-    <div id="map"></div>
-  </main>
-
-  <footer>
-    <p>Made with 🐶 in Busan</p>
-  </footer>
+  <h1 style="text-align:center; margin:20px 0;">Bella Walks Dog Walks Map</h1>
+  <div id="map"></div>
 
   <!-- Leaflet JS -->
   <script
-    src="https://unpkg.com/leaflet/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXgLZbsrjJ6Pvhp3ecfA4tqWjBv9AAeTCe1rCk1ZTDRr+N+SbwKuwXXTf5x5WcB2oM2jF1wY+jrYw=="
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-oQ1RcN11lw2GCD2P8dfCfv4vYpbt1fNu7S3kaP3AAo8="
     crossorigin=""
   ></script>
 
-  <!-- Your JS -->
+  <!-- Your custom script -->
   <script src="script.js"></script>
 </body>
 </html>
-
