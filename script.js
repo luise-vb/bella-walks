@@ -1,12 +1,12 @@
 // Initialize the map
-const map = L.map('map').setView([35.1532, 129.1185], 13); // Busan center
+const map = L.map('map').setView([35.1532, 129.1185], 14);
 
-// Add tile layer from OpenStreetMap
+// Add the tile layer from OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Walk locations
+// Define walk locations and info
 const walks = [
   {
     coords: [35.1532, 129.1185], // Gwangalli Beach
@@ -15,30 +15,30 @@ const walks = [
     image: "images/gwangalli.jpg"
   },
   {
-    coords: [35.171200, 129.127200], // Centum River Park
+    coords: [35.1696, 129.1307], // Centum River Park
     title: "Centum River Park",
-    description: "Always really quiet. Good place for families and to stay in the shade on hot days. Good for picnics too :)",
+    description: "Always really quiet, good place for families and good to stay in the shade on hot days. Good to have pick-nicks as well :)",
     image: "images/centumpark.jpg"
   },
   {
-    coords: [35.163617, 129.120662], // Millakdong Breakwater
+    coords: [35.1545, 129.1229], // Millakdong Breakwater
     title: "Millakdong Breakwater",
     description: "Her favourite. We are mostly alone when we go there. She usually pulls me towards there as soon as we leave the house.",
     image: "images/Bella.jpg"
   },
   {
-    coords: [35.18046, 129.20335], // Songjeong Beach
+    coords: [35.1796, 129.2008], // Songjeong Beach
     title: "Songjeong Beach",
-    description: "Good for some change of scenery. Anywhere with sand and birds is fine for her!",
+    description: "Good for some change of scenery—anywhere with sand and birds is fine for her.",
     image: "images/Sonj.jpg"
   }
 ];
 
-// Add markers with popups
+// Add markers with popup
 walks.forEach(walk => {
   const popupContent = `
-    <h3>${walk.title}</h3>
     <img src="${walk.image}" alt="${walk.title}" />
+    <h3>${walk.title}</h3>
     <p>${walk.description}</p>
   `;
   L.marker(walk.coords).addTo(map).bindPopup(popupContent);
