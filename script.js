@@ -15,13 +15,13 @@ const walks = [
     image: "images/gwangalli.jpg"
   },
   {
-    coords: [35.1696, 129.1307], // Centum River Park
+    coords: [35.1692, 129.1302], // Centum River Park
     title: "Centum River Park",
     description: "Always really quiet, good place for families and good to stay in the shade on hot days. Good to have pick-nicks as well :)",
     image: "images/centumpark.jpg"
   },
   {
-    coords: [35.1545, 129.1229], // Millakdong Breakwater
+    coords: [35.1585, 129.1606], // Millakdong Breakwater
     title: "Millakdong Breakwater",
     description: "Her favourite. We are mostly alone when we go there. She usually pulls me towards there as soon as we leave the house.",
     image: "images/Bella.jpg"
