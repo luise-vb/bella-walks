@@ -1,49 +1,45 @@
-// Initialize the map centered on Busan, South Korea
-const map = L.map('map').setView([35.1595, 129.1604], 13);
+// Initialize map centered on Busan
+const map = L.map('map').setView([35.153, 129.118], 13);
 
 // Add OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors',
-  maxZoom: 18,
+  attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// Array of dog walk locations
-const locations = [
+// Array of walk locations
+const walks = [
   {
-    name: 'Gwangalli Beach',
-    coords: [35.1539, 129.1186],
-    description: 'Perfect during the week in low season but way too crowded on weekends or any day between June and September, Bella loves running in the sand and scaring the pigeons.',
-    img: 'images/gwangan.jpg',
+    name: "Gwangalli Beach",
+    coords: [35.1532, 129.1185],
+    description: "Perfect during the week in low season but way too crowded on weekends or any day between June and September. Bella loves running in the sand and scaring the pigeons.",
+    image: "images/gwangalli.jpg"
   },
   {
-    name: 'Centum River Park',
-    coords: [35.1639, 129.1634],
-    description: 'Always really quiet good place for families and good to stay in the shade on hot days. Good to have picnics as well :)',
-    img: 'images/centumpark.jpg',
+    name: "Centum River Park",
+    coords: [35.1703, 129.1310],
+    description: "Always really quiet, good place for families and good to stay in the shade on hot days. Good to have pick-nicks as well :)",
+    image: "images/centumpark.jpg"
   },
   {
-    name: 'Millakdong Breakwater',
-    coords: [35.1562, 129.1774],
-    description: 'Her favourite. We are mostly alone when we go there. She usually pulls me towards here as soon as we leave the house.',
-    img: 'images/bella.jpg',
+    name: "Millakdong Breakwater",
+    coords: [35.1537, 129.1171],
+    description: "Her favourite. We are mostly alone when we go there. She usually pulls me towards there as soon as we leave the house.",
+    image: "images/Bella.jpg"
   },
   {
-    name: 'Songjeong Beach',
-    coords: [35.1933, 129.1825],
-    description: 'Good for some change of scenery, anywhere with sand and birds is fine for her.',
-    img: 'images/sonj.jpg',
-  },
+    name: "Songjeong Beach",
+    coords: [35.1785, 129.2017],
+    description: "Good for some change of scenery, anywhere with sand and birds is fine for her.",
+    image: "images/Sonj.jpg"
+  }
 ];
 
-// Add markers and popups for each location
-locations.forEach(loc => {
-  const marker = L.marker(loc.coords).addTo(map);
-
+// Add markers and popups
+walks.forEach(walk => {
   const popupContent = `
-    <h3>${loc.name}</h3>
-    <img src="${loc.img}" alt="${loc.name}" />
-    <p>${loc.description}</p>
+    <img src="${walk.image}" alt="${walk.name}" />
+    <h3>${walk.name}</h3>
+    <p>${walk.description}</p>
   `;
-
-  marker.bindPopup(popupContent);
+  L.marker(walk.coords).addTo(map).bindPopup(popupContent);
 });
