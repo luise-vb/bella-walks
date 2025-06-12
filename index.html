@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Map Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bella Walks Dog Walks Map</title>
+
+  <!-- Leaflet CSS (without integrity to avoid errors) -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-o8cyLhLF4nYmbjD4LCS0CrSqVbN6qhBMYttY7jZ6L8Q="
-    crossorigin=""
   />
-  <style>#map { height: 400px; }</style>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <h1>Bella Walks Dog Walks Map</h1>
   <div id="map"></div>
+
+  <!-- Leaflet JS (without integrity) -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-oQ1RcN11lw2GCD2P8dfCfv4vYpbt1fNu7S3kaP3AAo8="
-    crossorigin=""
   ></script>
-  <script>
-    const map = L.map('map').setView([35.1533, 129.1189], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-  </script>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
 </body>
 </html>
