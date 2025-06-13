@@ -30,7 +30,7 @@ const walks = [
     coords: [35.1796, 129.2008], // Songjeong Beach
     title: "Songjeong Beach",
     description: "Good for some change of scenery—anywhere with sand and birds is fine for her.",
-    image: "images/Sonj.jpg"
+    image: "images/Sonji.jpg"
   }
 ];
 
