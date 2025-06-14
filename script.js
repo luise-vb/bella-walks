@@ -11,25 +11,25 @@ const walks = [
   {
     coords: [35.1532, 129.1185], // Gwangalli Beach
     title: "Gwangalli Beach",
-    description: "Perfect during the week in low season but way too crowded on weekends or any day between June and September. Bella loves running in the sand and scaring the pigeons.",
+    description: "Perfect during the week in low season but way too crowded on weekends or any day between June and September. Bella loves running in the sand and scaring the pigeons. 8/10",
     image: "images/gwangalli.jpg"
   },
   {
     coords: [35.1692, 129.1299], // Centum River Park
     title: "Centum River Park",
-    description: "Always really quiet, good place for families and good to stay in the shade on hot days. Good to have pick-nicks as well :)",
+    description: "Always really quiet, good place for families and good to stay in the shade on hot days. Good to have pick-nicks as well :) 10/10",
     image: "images/centumpark.jpg"
   },
   {
     coords: [35.1585, 129.1606], // Millakdong Breakwater
     title: "Millakdong Breakwater",
-    description: "Her favourite. We are mostly alone when we go there. She usually pulls me towards there as soon as we leave the house.",
+    description: "Her favourite. We are mostly alone when we go there. She usually pulls me towards there as soon as we leave the house. 9/10 Too short for a good walk",
     image: "images/Bella.jpg"
   },
   {
     coords: [35.1796, 129.2008], // Songjeong Beach
     title: "Songjeong Beach",
-    description: "Good for some change of scenery—anywhere with sand and birds is fine for her.",
+    description: "Good for some change of scenery—anywhere with sand and birds is fine for her. 8/10 A little far",
     image: "images/Sonji.jpg"
   }
 ];
