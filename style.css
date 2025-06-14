@@ -1,32 +1,105 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+  background: linear-gradient(135deg, #ffeef8 0%, #f0f8ff 50%, #e6f3ff 100%);
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
   margin: 20px 0;
+  color: #ff69b4;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+  font-weight: bold;
+}
+
+/* Add sparkle effects to title */
+h1::before {
+  content: "✨ ";
+  font-size: 0.8em;
+}
+
+h1::after {
+  content: " ✨";
+  font-size: 0.8em;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cute-button {
+  margin: 0 10px;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cute-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+  background: linear-gradient(45deg, #ff1493, #ff69b4);
+}
+
+.cute-button:active {
+  transform: translateY(0px);
 }
 
 #map {
   height: 600px;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 4px solid #ffb6c1;
 }
 
 .leaflet-popup-content img {
   width: 200px;
-  border-radius: 8px;
+  border-radius: 15px;
   display: block;
   margin: 0 auto 10px;
+  border: 3px solid #ffb6c1;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
 }
 
 .leaflet-popup-content h3 {
-  margin: 0 0 5px;
+  margin: 0 0 8px;
   text-align: center;
+  color: #ff1493;
+  font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(255, 20, 147, 0.3);
 }
 
 .leaflet-popup-content p {
   font-size: 14px;
   text-align: center;
   margin: 0;
+  color: #8b4b8c;
+  font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+/* Custom popup styling */
+.leaflet-popup-content-wrapper {
+  background: linear-gradient(135deg, #fff0f8 0%, #f8f0ff 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+}
+
+.leaflet-popup-tip {
+  background: #fff0f8;
 }
