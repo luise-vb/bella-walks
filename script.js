@@ -13,7 +13,6 @@ const walks = [
     title: "Gwangalli Beach",
     description: "Perfect during the week in low season but way too crowded on weekends or any day between June and September. Bella loves running in the sand and scaring the pigeons. 8/10",
     image: "images/IMG_3621.jpeg"
-"
   },
   {
     coords: [35.172, 129.131], // Centum River Park
