@@ -21,7 +21,7 @@ const walks = [
     image: "images/centumpark.jpg"
   },
   {
-    coords: [35.1585, 129.1606], // Millakdong Breakwater
+    coords: [35.152, 129.129], // Millakdong Breakwater
     title: "Millakdong Breakwater",
     description: "Her favourite. We are mostly alone when we go there. She usually pulls me towards there as soon as we leave the house. 9/10 Too short for a good walk",
     image: "images/Bella.jpg"
