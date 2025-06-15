@@ -15,7 +15,7 @@ const walks = [
     image: "images/IMG_3621.jpeg"
   },
   {
-    coords: [35.172, 129.131], // Centum River Park
+    coords: [35.169, 129.130], // Centum River Park
     title: "Centum River Park",
     description: "Always really quiet, good place for families and good to stay in the shade on hot days. Good to have pick-nicks as well :) 10/10",
     image: "images/centumpark.jpg"
